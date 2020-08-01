@@ -1,0 +1,121 @@
+.earth_home {
+    border: none;
+    height: calc(100% - 11rem);
+    width: calc(100% - 73rem);
+    position: absolute;
+    top: 6rem;
+    right: 36.5rem;
+    transition: all 0.5s;
+}
+.earth_place {
+    border: none;
+    position: absolute;
+    height: calc(100% - 8.5rem);
+    width: calc(100% - 72.8rem);
+    top: 7rem;
+    right: 41.5rem;
+    transition: all 0.5s;
+}
+.earth_place_small {
+    height: 37%;
+    width: 39.1rem;
+    right: 0.5rem;
+}
+.earth_popular {
+    border: none;
+    height: calc(100% - 8.5rem);
+    width: calc(100% - 71rem);
+    position: absolute;
+    top: 7rem;
+    right: 35.6rem;
+    transition: all 0.5s;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0.1rem;
+    position: absolute;
+    top: 5.9rem;
+    bottom: 2px;
+    display: flex;
+}
+
+.left, .center, .right {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.center {
+    flex: 1;
+    position: relative;
+}
+
+@keyframes nav_btn {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ctrlPanel li {
+    padding: .5rem;
+}
+
+.ctrlPanel li:nth-child(odd) {
+    border-bottom: 0.06rem solid rgba(0, 230, 248, 0.3);
+}
+
+.ctrlPanel li:nth-child(even) {
+    border-bottom: 0.06rem solid #00e6f8;
+}
+
+.ctrlPanel li:hover {
+    background-color: rgba(57, 117, 174, 0.3);
+    cursor: pointer;
+}
+
+.center .border {
+    height: 100%;
+    background-image: url("../assets/operation/center_border.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto 0.5rem;
+    position: relative;
+}
+
+.top_group {
+    position: absolute;
+    top: 1.5%;
+    right: 1.2%;
+    z-index: 9;
+}
+
+.sel_img {
+    width: 8.63rem;
+    height: 2.6rem;
+    color: #fff;
+    padding-left: 1rem;
+    font-size: 1.32rem;
+    text-align: center;
+    background: none;
+    border: 1px solid #00c4dc;
+    outline: none;
+    /*去掉默认的下拉三角*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*添加下拉三角图标*/
+    background: url("../assets/placeImg/bg1.png") no-repeat 87% center transparent;
+    background-size: 15% 30%;
+}
+
+.sel_img option {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+}
